@@ -1,30 +1,30 @@
-Attribute,Description,Notes
-IT service name,The unique string identifying the IT service,
-IT service type,A classification of the IT service,Two values permitted: application or infrastructure
-2016 requested $,A dollar amount,
-Description,"A narrative characterization of the product's purpose, value proposition, and so forth. ",
-Business capability,Short name of business capability,
-User satisfaction ,"Most recent user satisfaction score, normalized to a 1-10 scale",
-User satisfaction trend,"Trend of last 5 user satisfaction scores, normalized to a -5 – +5 scale","-5 - steeply negative trend, +5 - steeply postiive trend"
-Stakeholder NPS ,"Most recent stakeholder NPS, normalized to a 1-10 scale",
-Stakeholder NPS trend,"Trend of last 5 stakeholder NPS scores, normalized to a -5 – +5 scale",
-Unique users ,Numeric time series 2010-2014,"For infrastructure services, this represents other services' usage"
-Unique users trend,"Trend of last 5 stakeholder NPS scores, normalized to a -5 – +5 scale",
-Support team & architect NPS,Combined score representing NPS of support team & involved architects. Proxy for technical debt. ,
-,,
-Revenue dependency,Numeric time series 2010-2014. May be zero for internal applications,
-,,
-SLA adherence,% time series 2010-2014,
-,,
-Change reversals,Numeric time series 2010-2014,
-,,
-Delivery frequency,Numeric time series 2010-2014,
-,,
-Fixed asset base ,Dollar value. May be 0 for internal/external cloud based. ,
-Average asset age,Numeric value. May be 0 for internal/external cloud based,
-Product1 dependency,The most important external product dependency,
-Product1 sunset,The date that the major Product1 version used will be retired,
-Product2 dependency,The second most important product dependency,
-Product2 sunset,The date that the major Product2 version used will be retired,
-Service1 dependency,The most important internal product dependency,
-Service2 dependency,The second most important internal product dependency,
+Attribute,Description,Notes,Logical formula for generation
+IT service name,The unique string identifying the IT service,,Greek & NATO alphabets
+IT service type,A classification of the IT service,Two values permitted: application or infrastructure,25% chance of being infrastructure
+2016 requested $,A dollar amount,,Power law distribution ranging from 0 to $5 million. 20% request 80%. Seeded from unique users. 
+Description,"A narrative characterization of the product's purpose, value proposition, and so forth. ",,?
+Business capability,Short name of business capability,,?
+User satisfaction ,"Most recent user satisfaction score, normalized to a 1-10 scale",,"Binomial, mean of 6"
+User satisfaction trend,"Trend of last 5 user satisfaction scores, normalized to a -5 – +5 scale","-5 - steeply negative trend, +5 - steeply positive trend","Binomial, mean of 0 "
+Stakeholder NPS ,"Most recent stakeholder NPS, normalized to a 1-10 scale",,"Binomial, mean of 6"
+Stakeholder NPS trend,"Trend of last 5 stakeholder NPS scores, normalized to a -5 – +5 scale",,"Binomial, mean of 0 "
+Unique users ,Numeric time series 2010-2014,"For infrastructure services, this represents other services' usage",Power law ranging from 0 to 500000. Top 5% have 95%
+Unique users trend,"Trend of last 5 stakeholder NPS scores, normalized to a -5 – +5 scale",,"Binomial, mean of 0 "
+Support team & architect NPS,Combined score representing NPS of support team & involved architects. Proxy for technical debt. ,“Would you recommend this product's platform and outcomes as a model for other products?”,"Binomial, mean of 6"
+ST&A trend,"Trend of last 5 support team/architect scores, normalized to a -5 – +5 scale",,"Binomial, mean of 0 "
+Revenue dependency,Numeric time series 2010-2014. May be zero for internal applications,,Power law distribution ranging from 0 to $5 million. 20% request 80%. Seeded from unique users. 
+Revenue trend,"Trend of last 5 revenue #s, normalized to a -5 – +5 scale",,"Binomial, mean of 0 "
+SLA adherence,% time series 2010-2014,,"Steeply declining power law, most are within 1% with a few outliers"
+SLA trend,"Trend of last 5 SLA scores, normalized to a -5 – +5 scale",,"Binomial, mean of 0 "
+Change reversals,Numeric time series 2010-2014,,"Steeply declining power law, most are within  0-5 with a few outliers"
+Change trend,"Trend of last 5 change scores, normalized to a -5 – +5 scale",,"Binomial, mean of 0 "
+Delivery frequency,Numeric time series 2010-2014,"NOT the same as release frequency, which is driven by business objectives. Should be between 1-10000. Values > 20 signify essentially a continuous delivery capability. ",skewed left with a long tail to the right
+Delivery trend,"Trend of last 5 delivery scores, normalized to a -5 – +5 scale",,"Binomial, mean of 1"
+Fixed asset base ,Dollar value. May be 0 for internal/external cloud based. ,,Seeded from “heft.” Power law
+Average asset age,Numeric value. May be 0 for internal/external cloud based,"typically a range 0-5, outliers unusual. ",skewed left with a long tail to the right truncated at 10
+Product1 dependency,The most important external product dependency,,"Selected randomly from domain of “Prod1”, “Prod2”, … “Prod8”"
+Product1 sunset,The date that the major Product1 version used will be retired,,selected randomly from next 5 years
+Product2 dependency,The second most important product dependency,,"Selected randomly from domain of “Prod1”, “Prod2”, … “Prod8”"
+Product2 sunset,The date that the major Product2 version used will be retired,,selected randomly from next 5 years
+Service1 dependency,The most important internal product dependency,,"selected randomly from infrastructure services, weighted"
+Service2 dependency,The second most important internal product dependency,,"selected randomly from infrastructure services, weighted"

@@ -1,5 +1,5 @@
 IT service name,IT service type,2016 requested $,Description,Business capability,User satisfaction ,User satisfaction trend,Stakeholder NPS ,Stakeholder NPS trend,Unique users ,Unique users trend,Support team & architect NPS,ST&A trend,Revenue dependency,Revenue trend,SLA adherence,SLA trend,Change reversals,Change trend,Delivery frequency,Delivery trend,Fixed asset base ,Average asset age,Product1 dependency,Product1 sunset,Product2 dependency,Product2 sunset,Service1 dependency,Service2 dependency
-alpha,application,,,,,,,,,,,,,,,,,,,,,,,,,,,
+alpha,application,0.5970987892,,,,,,,,,,,,,,,,,,,,,,,,,,
 beta,application,,,,,,,,,,,,,,,,,,,,,,,,,,,
 gamma,application,,,,,,,,,,,,,,,,,,,,,,,,,,,
 delta,application,,,,,,,,,,,,,,,,,,,,,,,,,,,
