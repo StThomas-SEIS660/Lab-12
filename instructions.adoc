@@ -41,13 +41,16 @@ _Do not confuse NPS with customer/user satisfaction. In this exercise, NPS is ow
 
 Indicators of technical fitness:
 
+
 * Low SLA breaches (incidents)
 ** _High would indicate low fitness_
 * Low reversed changes/deployments
-** _High would indicate low fitness_
+** _High would indicate low fitness, everythng else being equal_
 * Delivery frequency (times per year, or continuous)
 ** _Higher is better_
 * Current assets & technology platforms
 ** _Older indicates low fitness_
 * NPS from support teams & architects
 ** _High is good_
+* High/increasing customer/user satisfaction score
+** _Low score *might* reflect poor technical platform_
