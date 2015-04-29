@@ -1,0 +1,30 @@
+questions:
+
+What is the best investment?
+
+What is the worst investment?
+
+What investment is best long term?
+
+What investment is best short term?
+
+What technology product would you replace first?
+
+What is an example of a service that should be
+
+* upgraded?
+* retired?
+* outsourced?
+* re-evaluated with closer business partnership?
+
+
+            low tech fit      hi tech fit
+  hi biz
+    fit
+
+
+  low biz
+    fit
+
+    biz fit indicators: NPS, usage, revenues
+    tech fit indicators: incidents, asset/tech lifecycle
