@@ -31,8 +31,6 @@ Indicators of business fitness:
 
 * High alignment with business model, or addresses a genuine business constraint
 * High/increasing customer/user satisfaction score
-* High/increasing Net Promoter Score from stakeholder
-* High/increasing usage
 * High/increasing revenue dependency
 
 _For all, "low" or lack thereof indicates the opposite: low business fitness!_
