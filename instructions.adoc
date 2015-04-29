@@ -1,30 +1,53 @@
-questions:
+== Lab 12: IT Portfolio Management
 
-What is the best investment?
+In this final lab, you will analyze an IT portfolio and come up with a set of recommendations for presentation to the class.
 
-What is the worst investment?
+The portfolio is represented in an Excel spreadsheet. There is a significant amount of data.
 
-What investment is best long term?
+You have a limited budget. You will not be able to fund all the requests.
 
-What investment is best short term?
+You need to answer:
 
-What technology product would you replace first?
+* What are the best investments?
 
-What is an example of a service that should be
+* What are the worst investments?
 
-* upgraded?
-* retired?
-* outsourced?
-* re-evaluated with closer business partnership?
+* What technology product would you replace first?
 
+* What is an example of a service that should be
 
-            low tech fit      hi tech fit
-  hi biz
-    fit
+** upgraded?
+** retired?
+** outsourced?
+** re-evaluated with closer business partnership?
 
+|===
+||*Low business fit* |*High business fit*
+|*High technical fit* |Re-evaluate with business partners; experiment |Upgrade & invest
+|*Low technical fit* |Outsource |Re-architect & refresh
+|===
 
-  low biz
-    fit
+Indicators of business fitness:
 
-    biz fit indicators: NPS, usage, revenues
-    tech fit indicators: incidents, asset/tech lifecycle
+* High alignment with business model, or addresses a genuine business constraint
+* High/increasing customer/user satisfaction score
+* High/increasing Net Promoter Score from stakeholder
+* High/increasing usage
+* High/increasing revenue dependency
+
+_For all, "low" or lack thereof indicates the opposite: low business fitness!_
+
+_Do not confuse NPS with customer/user satisfaction. In this exercise, NPS is owned by the person who pays the bills; customer/user by the end consumer of the IT service. Notice that in industry, NPS is sometimes used directly to assess user satisfaction, but that's not how we are framing this exercise._
+
+Indicators of technical fitness:
+
+* Low SLA breaches (incidents)
+** _High would indicate low fitness_
+* Low reversed changes/deployments
+** _High would indicate low fitness_
+* Delivery frequency (times per year, or continuous)
+** _Higher is better_
+* Current assets & technology platforms
+** _Older indicates low fitness_
+* NPS from support teams & architects
+** _High is good_
