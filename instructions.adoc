@@ -1,4 +1,6 @@
-== Lab 12: IT Portfolio Management
+== SEIS660 Lab 12: IT Portfolio Management
+
+Version 1, 5/1/2015
 
 In this final lab, you will analyze an IT portfolio and come up with a set of recommendations for presentation to the class.
 
@@ -47,7 +49,7 @@ Indicators of business fitness:
 ** _Higher is better. This is a critical metric. It is about 80% of business fit for this exercise._
 * Revenue dependency
 ** _If there is a revenue dependency, the system cannot be outsourced (corporate policy)_
-** _No revenue dependency does not automatically mean the system should be outsourced._
+** _No revenue dependency does not automatically mean the system should be outsourced. HR systems have no revenue dependency, but represent critical and risky functionality._
 ** _The most important systems combine revenue dependency with high "heft"_
 ** _For infrastructure systems, consider whether the systems using them have revenue dependencies._
 
@@ -95,7 +97,7 @@ In terms of product, if you sort the spreadsheet by first column N and then colu
 
 === Setting up
 
-1. Download the spreadsheet from
+1. Download the spreadsheet from https://github.com/StThomas-SEIS660/Lab-12/blob/master/seis660portfolio.xls. Click "View Raw" to download.
 2. Create a new tab and name it for your team. Save your spreadsheet somewhere you can find it.
 3. Go to the dataset-gen tab and hit F9.
 4. Select all and paste AS FORMATTED VALUES to your new tab.
@@ -117,5 +119,7 @@ On a Powerpoint deck, answer the following:
 ** re-evaluated with closer business partnership?
 
 Again, give your reasoning.
+
+Extra credit: prepare a bubble chart for some subset of the data.
 
 This will be due for in class presentation at 8 PM on 5/8, 15 minutes per team. Final versions can be handed in by 5/15.
